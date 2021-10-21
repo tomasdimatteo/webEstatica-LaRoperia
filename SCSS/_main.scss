@@ -1,0 +1,93 @@
+@import "colores";
+@mixin formatos ($color, $size, $height, $weight) {
+    color: $color;
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+}
+main{
+    a{
+        text-decoration: none;
+        @include formatos(white, 1rem, 2, normal)
+    }
+    h2{
+        @include formatos(black, 2rem, 2, normal)
+    }
+    h3{
+        @include formatos(black, 1.6rem, 2, normal)
+    }
+    h4{
+        @include formatos(black, 1.4rem, 2, normal)
+    }
+    h5{
+        @include formatos(black, 1.2rem, 2, normal)
+    }
+    h6{
+        @include formatos(black, 1rem, 2, bold)
+    }
+    section{
+        margin: 5em;
+    }
+    .main--textoBlanco{
+        h2, h3, h4, h5, h6, p{
+            color: white;
+        }
+    }
+    .main__fuenteTitulo{
+        font-family: 'Bree Serif', sans-serif; 
+    }
+    .main__fuenteTexto{
+        font-family: 'Open Sans', sans-serif;
+    }
+    .main__bg{
+        background-color: $bg_purpura;
+        background-image: linear-gradient(315deg, $bg_purpura 0%, $bg_rosa 74%);
+    }
+    .main__faqBorder{
+        margin: 20px;
+        padding: 20px;
+        border-width: 5px;
+        border-style: solid;
+        border-image: linear-gradient(319deg, $bg_purpura 0%, $bg_fucsiaosc 37%, $bg_fucsia 100%)10;
+    }
+    .main__buyButton{
+        margin-top: 5px;
+        padding: 5px;
+        border: none;
+        border-radius: 10%;
+        color: white;
+        background-color: $bg_fucsia;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            background-color: $bg_fucsiaosc;
+        }
+    }
+    .main__formStyle{
+        background-color: $bg_purpura; 
+        margin: 5px;
+        ul{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        ul li{
+            padding: 6px;
+            display: flex;
+        }
+        ul li p{
+            margin: auto;
+        }
+        input, label, select{
+            padding: 8px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    .section__fullHeight{
+        width: 100%;
+        height: auto;
+    }
+}

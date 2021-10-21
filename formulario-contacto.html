@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- SEO -->
+    <title>La Ropería - Formulario de contacto</title>
+    <meta name="description" content="¿Tenés dudas y no encontraste la respuesta en nuestras preguntas frecuentes? Ingresá a la web, rellená el formulario y en breves te estaremos contactando.">
+    <meta name="keywords"  content="DUDAS, RESPUESTAS, PREGUNTAS, PREGUNTAS PERSONALIZADAS, TALLES, CONSULTAS, MAYORISTA, MINORISTA">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="Imagenes/Logo SF.ico" type="image/ico">
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark header__bg">
+            <div class="container">
+                <a class="navbar-brand" href="inicio.html">
+                    <img src="Imagenes/laroperia.png" alt="Logo del emprendimiento" style="width: 5rem;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#toggleMobileMenu" aria-controls="#toggleMobileMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li><a class="nav-link" href="inicio.html">Inicio</a></li>
+                        <li><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+                        <li><a class="nav-link" href="#">Contacto</a></li>
+                        <li><a class="nav-link" href="como-comprar.html">Como comprar</a></li>
+                        <li><a class="nav-link" href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                        <li><a class="nav-link" href="#"><img src="Imagenes/carritoBlanco.png" alt="Carrito" width=40px></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container my-4">
+            <div class="main__fuenteTitulo main--textoBlanco text-center"><h4>¿Tenés alguna duda específica? Llena nuestro formulario.</h4></div>
+            <div class="main__fuenteTexto main--textoBlanco text-center"><p>Recordá que los casilleros marcados con ( * ) son obligatorios para poder enviar el formulario.</p></div>
+            <form class="main__formStyle main__fuenteTexto m-2 p-1 justify-content-center text-center">
+                <div class="row">
+                    <div class="col mx-lg-3 px-lg-3">
+                        <label for="name">Nombre*</label>
+                        <input type="text" class="form-control" name="name" placeholder="Ej: Juan" required>
+                    </div>
+                    <div class="col mx-lg-3 px-lg-3">
+                        <label for="lastname">Apellido*</label>
+                        <input type="text" class="form-control" name="lastName" placeholder="Ej: Carlos" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-xl-6 mx-lg-3 px-lg-3">
+                        <label for="inputEmail4">Email*</label>
+                        <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="juan_carlos@ejemplo.com" required>
+                    </div>
+                    <div class="form-check col-md-4 col-lg-4 col-xl-4 text-center m-auto mx-lg-3 px-lg-3">
+                        <input class="form-check-inline" type="checkbox" value="" id="defaultCheck1" required>
+                        <label class="form-check-label" for="defaultCheck1">
+                            ¿Desea recibir nuestro NewsLetter?*
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-lg-3 px-lg-3">
+                        <label for="inputState">Ciudad</label>
+                        <input type="text" class="form-control" id="inputState" name="state" placeholder="Ej: Mendoza">
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-lg-3 px-lg-3">
+                        <label for="inputCity">Departamento</label>
+                        <input type="text" class="form-control" id="inputCity" name="city" placeholder="Ej: Godoy Cruz">
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-lg-3 px-lg-3">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip" name="zip" placeholder="Ej: 5501">
+                    </div>
+                </div>
+                <div class="form-group mx-lg-3 px-lg-3">
+                    <label for="exampleFormControlTextarea1">Escribí tu mensaje*</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Ej: Hola Rope CEO. Me encuentro en problemas, acá está el espíritu de Juan Carlos..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary m-3 px-3">Enviar</button>
+                <button type="reset" class="btn btn-primary m-3 px-3">Limpiar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="container text-center mx-auto">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-lg-4 p-3 m-2 mx-auto">
+                    <h3>Contactanos</h3>
+                    <div>
+                        <p>📱 123456789</p>
+                        <p>📧 laroperia@shop.com</p>
+                        <p>⏩ Av. Transitada 1234</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-lg-4 p-3 m-2 mx-auto">
+                    <h3>Medios de pago</h3>
+                    <div>
+                        <img class="m-1" src="Imagenes/tarjetas/amex.png" alt="Tarjeta Amex" style="width: 4em;">
+                        <img class="m-1" src="Imagenes/tarjetas/visa.png" alt="Tarjeta Visa" style="width: 4em;">
+                        <img class="m-1" src="Imagenes/tarjetas/mastercard.png" alt="Tarjeta Master" style="width: 4em;">
+                        <img class="m-1" src="Imagenes/tarjetas/cabal.png" alt="Tarjeta Cabal" style="width: 4em;">
+                        <img class="m-1" src="Imagenes/tarjetas/tarjeta-naranja.png" alt="Tarjeta Naranja"
+                        style="width: 4em;">
+                        <img class="m-1" src="Imagenes/tarjetas/mercadopago.png" alt="Mercadopago" style="width: 4em;">
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-lg-4 p-3 m-2 mx-auto">
+                    <h3>Seguinos</h3>
+                    <a class="m-1" href="https://www.instagram.com/laroperia_showroom/" target="_blank"><img class="body__transition"
+                            src="Imagenes/instagram.png" alt="Logo instagram" style="width: 4em;"></a>
+                    <a class="m-1 body__transition" href="https://www.facebook.com/laroperia.mza" target="_blank"><img class="body__transition"
+                            src="Imagenes/facebook.png" alt="Logo instagram" style="width: 4em;"></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

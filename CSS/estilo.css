@@ -27,7 +27,7 @@ header {
     header img:hover {
       transform: scale(1.1, 1.1); }
   header .header__bg {
-    background-image: url("/Proyecto/Imagenes/manos.png");
+    background-image: url("../Imagenes/manos.png");
     background-repeat: repeat;
     background-size: 4%; }
   header .nav-link {
@@ -43,106 +43,94 @@ header {
     background-color: black;
     border-color: black; }
     header .navbar-dark .navbar-toggler .navbar-toggler-icon {
-      background-image: url("/Proyecto/Imagenes/manos.png"); }
+      background-image: url("../Imagenes/manos.png"); }
 
-main a {
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-  line-height: 2;
-  font-weight: normal; }
-
-main h2 {
-  color: black;
-  font-size: 2rem;
-  line-height: 2;
-  font-weight: normal; }
-
-main h3 {
-  color: black;
-  font-size: 1.6rem;
-  line-height: 2;
-  font-weight: normal; }
-
-main h4 {
-  color: black;
-  font-size: 1.4rem;
-  line-height: 2;
-  font-weight: normal; }
-
-main h5 {
-  color: black;
-  font-size: 1.2rem;
-  line-height: 2;
-  font-weight: normal; }
-
-main h6 {
-  color: black;
-  font-size: 1rem;
-  line-height: 2;
-  font-weight: bold; }
-
-main section {
-  margin: 5em; }
-
-main .main--textoBlanco h2, main .main--textoBlanco h3, main .main--textoBlanco h4, main .main--textoBlanco h5, main .main--textoBlanco h6, main .main--textoBlanco p {
-  color: white; }
-
-main .main__fuenteTitulo {
-  font-family: 'Bree Serif', sans-serif; }
-
-main .main__fuenteTexto {
-  font-family: 'Open Sans', sans-serif; }
-
-main .main__bg {
-  background-color: #9ab5e1;
-  background-image: linear-gradient(315deg, #9ab5e1 0%, #f39fdc 74%); }
-
-main .main__faqBorder {
-  margin: 20px;
-  padding: 20px;
-  border-width: 5px;
-  border-style: solid;
-  border-image: linear-gradient(319deg, #9ab5e1 0%, #AF2562 37%, #D14081 100%) 10; }
-
-main .main__buyButton {
-  margin-top: 5px;
-  padding: 5px;
-  border: none;
-  border-radius: 10%;
-  color: white;
-  background-color: #D14081;
-  font-weight: bold;
-  justify-content: center;
-  align-items: center; }
-  main .main__buyButton:hover {
-    background-color: #AF2562; }
-
-main .main__formStyle {
-  background-color: #9ab5e1;
-  margin: 5px; }
-  main .main__formStyle ul {
-    margin: auto;
-    display: flex;
+main {
+  background-color: #0a0a0a; }
+  main a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: normal; }
+  main h2 {
+    color: black;
+    font-size: 2rem;
+    line-height: 2;
+    font-weight: normal; }
+  main h3 {
+    color: black;
+    font-size: 1.6rem;
+    line-height: 2;
+    font-weight: normal; }
+  main h4 {
+    color: black;
+    font-size: 1.4rem;
+    line-height: 2;
+    font-weight: normal; }
+  main h5 {
+    color: black;
+    font-size: 1.2rem;
+    line-height: 2;
+    font-weight: normal; }
+  main h6 {
+    color: black;
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: bold; }
+  main section {
+    margin: 5em; }
+  main .main--textoBlanco h2, main .main--textoBlanco h3, main .main--textoBlanco h4, main .main--textoBlanco h5, main .main--textoBlanco h6, main .main--textoBlanco p {
+    color: white; }
+  main .main__fuenteTitulo {
+    font-family: 'Bree Serif', sans-serif; }
+  main .main__fuenteTexto {
+    font-family: 'Open Sans', sans-serif; }
+  main .main__bg {
+    background-color: #9ab5e1;
+    background-image: linear-gradient(315deg, #9ab5e1 0%, #f39fdc 74%); }
+  main .main__faqBorder {
+    margin: 20px;
+    padding: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(319deg, #9ab5e1 0%, #AF2562 37%, #D14081 100%) 10; }
+  main .main__buyButton {
+    margin-top: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 10%;
+    color: white;
+    background-color: #D14081;
+    font-weight: bold;
     justify-content: center;
-    list-style: none; }
-  main .main__formStyle ul li {
-    padding: 6px;
-    display: flex; }
-  main .main__formStyle ul li p {
-    margin: auto; }
-  main .main__formStyle input, main .main__formStyle label, main .main__formStyle select {
-    padding: 8px;
-    margin-top: 10px;
-    margin-bottom: 10px; }
-
-main .section__fullHeight {
-  width: 100%;
-  height: auto; }
+    align-items: center; }
+    main .main__buyButton:hover {
+      background-color: #AF2562; }
+  main .main__formStyle {
+    background-color: #9ab5e1;
+    margin: 5px; }
+    main .main__formStyle ul {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      list-style: none; }
+    main .main__formStyle ul li {
+      padding: 6px;
+      display: flex; }
+    main .main__formStyle ul li p {
+      margin: auto; }
+    main .main__formStyle input, main .main__formStyle label, main .main__formStyle select {
+      padding: 8px;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+  main .section__fullHeight {
+    width: 100%;
+    height: auto; }
 
 footer {
   background-color: black;
-  background-image: url("/Proyecto/Imagenes/manos.png");
+  background-image: url("../Imagenes/manos.png");
   background-repeat: repeat;
   background-size: 4%; }
   footer h3 {
@@ -158,100 +146,88 @@ footer {
     line-height: 2;
     font-weight: lighter; }
 
-main a {
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-  line-height: 2;
-  font-weight: normal; }
-
-main h2 {
-  color: black;
-  font-size: 2rem;
-  line-height: 2;
-  font-weight: normal; }
-
-main h3 {
-  color: black;
-  font-size: 1.6rem;
-  line-height: 2;
-  font-weight: normal; }
-
-main h4 {
-  color: black;
-  font-size: 1.4rem;
-  line-height: 2;
-  font-weight: normal; }
-
-main h5 {
-  color: black;
-  font-size: 1.2rem;
-  line-height: 2;
-  font-weight: normal; }
-
-main h6 {
-  color: black;
-  font-size: 1rem;
-  line-height: 2;
-  font-weight: bold; }
-
-main section {
-  margin: 5em; }
-
-main .main--textoBlanco h2, main .main--textoBlanco h3, main .main--textoBlanco h4, main .main--textoBlanco h5, main .main--textoBlanco h6, main .main--textoBlanco p {
-  color: white; }
-
-main .main__fuenteTitulo {
-  font-family: 'Bree Serif', sans-serif; }
-
-main .main__fuenteTexto {
-  font-family: 'Open Sans', sans-serif; }
-
-main .main__bg {
-  background-color: #9ab5e1;
-  background-image: linear-gradient(315deg, #9ab5e1 0%, #f39fdc 74%); }
-
-main .main__faqBorder {
-  margin: 20px;
-  padding: 20px;
-  border-width: 5px;
-  border-style: solid;
-  border-image: linear-gradient(319deg, #9ab5e1 0%, #AF2562 37%, #D14081 100%) 10; }
-
-main .main__buyButton {
-  margin-top: 5px;
-  padding: 5px;
-  border: none;
-  border-radius: 10%;
-  color: white;
-  background-color: #D14081;
-  font-weight: bold;
-  justify-content: center;
-  align-items: center; }
-  main .main__buyButton:hover {
-    background-color: #AF2562; }
-
-main .main__formStyle {
-  background-color: #9ab5e1;
-  margin: 5px; }
-  main .main__formStyle ul {
-    margin: auto;
-    display: flex;
+main {
+  background-color: #0a0a0a; }
+  main a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: normal; }
+  main h2 {
+    color: black;
+    font-size: 2rem;
+    line-height: 2;
+    font-weight: normal; }
+  main h3 {
+    color: black;
+    font-size: 1.6rem;
+    line-height: 2;
+    font-weight: normal; }
+  main h4 {
+    color: black;
+    font-size: 1.4rem;
+    line-height: 2;
+    font-weight: normal; }
+  main h5 {
+    color: black;
+    font-size: 1.2rem;
+    line-height: 2;
+    font-weight: normal; }
+  main h6 {
+    color: black;
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: bold; }
+  main section {
+    margin: 5em; }
+  main .main--textoBlanco h2, main .main--textoBlanco h3, main .main--textoBlanco h4, main .main--textoBlanco h5, main .main--textoBlanco h6, main .main--textoBlanco p {
+    color: white; }
+  main .main__fuenteTitulo {
+    font-family: 'Bree Serif', sans-serif; }
+  main .main__fuenteTexto {
+    font-family: 'Open Sans', sans-serif; }
+  main .main__bg {
+    background-color: #9ab5e1;
+    background-image: linear-gradient(315deg, #9ab5e1 0%, #f39fdc 74%); }
+  main .main__faqBorder {
+    margin: 20px;
+    padding: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(319deg, #9ab5e1 0%, #AF2562 37%, #D14081 100%) 10; }
+  main .main__buyButton {
+    margin-top: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 10%;
+    color: white;
+    background-color: #D14081;
+    font-weight: bold;
     justify-content: center;
-    list-style: none; }
-  main .main__formStyle ul li {
-    padding: 6px;
-    display: flex; }
-  main .main__formStyle ul li p {
-    margin: auto; }
-  main .main__formStyle input, main .main__formStyle label, main .main__formStyle select {
-    padding: 8px;
-    margin-top: 10px;
-    margin-bottom: 10px; }
-
-main .section__fullHeight {
-  width: 100%;
-  height: auto; }
+    align-items: center; }
+    main .main__buyButton:hover {
+      background-color: #AF2562; }
+  main .main__formStyle {
+    background-color: #9ab5e1;
+    margin: 5px; }
+    main .main__formStyle ul {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      list-style: none; }
+    main .main__formStyle ul li {
+      padding: 6px;
+      display: flex; }
+    main .main__formStyle ul li p {
+      margin: auto; }
+    main .main__formStyle input, main .main__formStyle label, main .main__formStyle select {
+      padding: 8px;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+  main .section__fullHeight {
+    width: 100%;
+    height: auto; }
 
 @media only screen and (min-width: 280px) and (max-width: 767px) {
   header li img {

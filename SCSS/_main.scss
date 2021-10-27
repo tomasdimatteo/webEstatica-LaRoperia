@@ -6,6 +6,7 @@
     font-weight: $weight;
 }
 main{
+    background-color: $bg_grisoscuro;
     a{
         text-decoration: none;
         @include formatos(white, 1rem, 2, normal)

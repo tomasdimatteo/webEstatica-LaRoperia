@@ -5,6 +5,9 @@
     line-height: $height;
     font-weight: $weight;
 }
+@mixin carrouselHeight ($h){
+    height: $h;
+}
 main{
     background-color: $bg_grisoscuro;
     a{
@@ -51,20 +54,6 @@ main{
         border-style: solid;
         border-image: linear-gradient(319deg, $bg_purpura 0%, $bg_fucsiaosc 37%, $bg_fucsia 100%)10;
     }
-    .main__buyButton{
-        margin-top: 5px;
-        padding: 5px;
-        border: none;
-        border-radius: 10%;
-        color: white;
-        background-color: $bg_fucsia;
-        font-weight: bold;
-        justify-content: center;
-        align-items: center;
-        &:hover{
-            background-color: $bg_fucsiaosc;
-        }
-    }
     .main__formStyle{
         background-color: $bg_purpura; 
         margin: 5px;
@@ -87,8 +76,39 @@ main{
             margin-bottom: 10px;
         }
     }
-    .section__fullHeight{
-        width: 100%;
-        height: auto;
+    .section__fullHeight img{
+        @media only screen and (min-width: 280px) and (max-width: 767px) {
+            @include carrouselHeight(auto)
+        }
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            @include carrouselHeight(auto)
+        }
+        @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+            @include carrouselHeight(100vh)
+        }
+    }
+    .card{
+        border: none;
+        outline: none;
+        background-color: white;
+        border-radius: 2.5%;
+        transition: transform .3s;
+        &:hover{
+            transform: translateY(-15px);
+            transition: transform .3s;
+        }
+        .info{
+            line-height: 17px;
+        }
+        .cost span{
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .main__bg{
+            border-end-start-radius: 3%;
+            border-end-end-radius: 3%;
+            color: white;
+            font-size: bold;
+        }
     }
 }

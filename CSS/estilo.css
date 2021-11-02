@@ -43,7 +43,7 @@ header {
     background-color: black;
     border-color: black; }
     header .navbar-dark .navbar-toggler .navbar-toggler-icon {
-      background-image: url("../Imagenes/manos.png"); }
+      background-image: url("../Imagenes/menu.png"); }
 
 main {
   background-color: #0a0a0a; }
@@ -95,18 +95,6 @@ main {
     border-width: 5px;
     border-style: solid;
     border-image: linear-gradient(319deg, #9ab5e1 0%, #AF2562 37%, #D14081 100%) 10; }
-  main .main__buyButton {
-    margin-top: 5px;
-    padding: 5px;
-    border: none;
-    border-radius: 10%;
-    color: white;
-    background-color: #D14081;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center; }
-    main .main__buyButton:hover {
-      background-color: #AF2562; }
   main .main__formStyle {
     background-color: #9ab5e1;
     margin: 5px; }
@@ -124,9 +112,34 @@ main {
       padding: 8px;
       margin-top: 10px;
       margin-bottom: 10px; }
-  main .section__fullHeight {
-    width: 100%;
-    height: auto; }
+  @media only screen and (min-width: 280px) and (max-width: 767px) {
+    main .section__fullHeight img {
+      height: auto; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    main .section__fullHeight img {
+      height: auto; } }
+  @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    main .section__fullHeight img {
+      height: 100vh; } }
+  main .card {
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 2.5%;
+    transition: transform .3s; }
+    main .card:hover {
+      transform: translateY(-15px);
+      transition: transform .3s; }
+    main .card .info {
+      line-height: 17px; }
+    main .card .cost span {
+      font-weight: bold;
+      font-size: 1.2rem; }
+    main .card .main__bg {
+      border-end-start-radius: 3%;
+      border-end-end-radius: 3%;
+      color: white;
+      font-size: bold; }
 
 footer {
   background-color: black;
@@ -196,18 +209,6 @@ main {
     border-width: 5px;
     border-style: solid;
     border-image: linear-gradient(319deg, #9ab5e1 0%, #AF2562 37%, #D14081 100%) 10; }
-  main .main__buyButton {
-    margin-top: 5px;
-    padding: 5px;
-    border: none;
-    border-radius: 10%;
-    color: white;
-    background-color: #D14081;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center; }
-    main .main__buyButton:hover {
-      background-color: #AF2562; }
   main .main__formStyle {
     background-color: #9ab5e1;
     margin: 5px; }
@@ -225,9 +226,34 @@ main {
       padding: 8px;
       margin-top: 10px;
       margin-bottom: 10px; }
-  main .section__fullHeight {
-    width: 100%;
-    height: auto; }
+  @media only screen and (min-width: 280px) and (max-width: 767px) {
+    main .section__fullHeight img {
+      height: auto; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    main .section__fullHeight img {
+      height: auto; } }
+  @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    main .section__fullHeight img {
+      height: 100vh; } }
+  main .card {
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 2.5%;
+    transition: transform .3s; }
+    main .card:hover {
+      transform: translateY(-15px);
+      transition: transform .3s; }
+    main .card .info {
+      line-height: 17px; }
+    main .card .cost span {
+      font-weight: bold;
+      font-size: 1.2rem; }
+    main .card .main__bg {
+      border-end-start-radius: 3%;
+      border-end-end-radius: 3%;
+      color: white;
+      font-size: bold; }
 
 @media only screen and (min-width: 280px) and (max-width: 767px) {
   header li img {

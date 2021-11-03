@@ -1,0 +1,36 @@
+@import "colores";
+@mixin formatos ($color, $size, $height, $weight, $font) {
+    color: $color;
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+    font-family: $font;
+}
+.error{
+    height: 100vh;
+    background-color: black;
+    background-image: url("../Imagenes/error404.png");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    background-size: 50%;
+    h1{
+        @include formatos($bg_fucsiaosc, 3rem, 1.8, bold, 'Bree Serif')
+    }
+    h2{
+        @include formatos($bg_rosa, 2rem, 1.8, normal, 'Open Sans')
+    }
+    h3{
+        @include formatos($bg_rosa, 2rem, 1.8, normal, 'Open Sans')
+    }
+    a{
+        text-decoration: none;
+        h3{
+            transition: all 0.5s ease;
+            &:hover{
+                transform: scale(1.1, 1.1);
+            }
+            @include formatos($bg_fucsiaosc, 2rem, 1.8, normal, 'Open Sans')
+        }
+    }
+}

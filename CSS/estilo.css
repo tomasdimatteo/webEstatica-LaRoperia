@@ -1,3 +1,41 @@
+.error {
+  height: 100vh;
+  background-color: black;
+  background-image: url("../Imagenes/error404.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+  background-size: 50%; }
+  .error h1 {
+    color: #AF2562;
+    font-size: 3rem;
+    line-height: 1.8;
+    font-weight: bold;
+    font-family: "Bree Serif"; }
+  .error h2 {
+    color: #f39fdc;
+    font-size: 2rem;
+    line-height: 1.8;
+    font-weight: normal;
+    font-family: "Open Sans"; }
+  .error h3 {
+    color: #f39fdc;
+    font-size: 2rem;
+    line-height: 1.8;
+    font-weight: normal;
+    font-family: "Open Sans"; }
+  .error a {
+    text-decoration: none; }
+    .error a h3 {
+      transition: all 0.5s ease;
+      color: #AF2562;
+      font-size: 2rem;
+      line-height: 1.8;
+      font-weight: normal;
+      font-family: "Open Sans"; }
+      .error a h3:hover {
+        transform: scale(1.1, 1.1); }
+
 * {
   padding: 0;
   margin: 0;

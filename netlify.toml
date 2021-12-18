@@ -1,4 +1,4 @@
 [build]
-  base    = "subdirectory"
-  publish = "subdirectory/dist/"
-  command = "your build command"
+  base    = "/"
+  publish = "inicio.html"
+  command = "npm run build"

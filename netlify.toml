@@ -1,4 +1,0 @@
-[build]
-  base    = "/"
-  publish = "/inicio.html"
-  command = "npm run build"
